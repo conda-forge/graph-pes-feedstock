@@ -1,5 +1,5 @@
 {% set name = "graph-pes" %}
-{% set version = "0.0.17" %}
+{% set version = "0.0.18" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/graph_pes-{{ version }}.tar.gz
-  sha256: 08f5c6b350c39670870968cba207b7303821a3c79fbc4c734845f6eae0352297
+  sha256: 67664a9835789f16c317ae62fc61553f2837b446bd8e39a190b308b1b0760e60
 
 build:
   entry_points:
