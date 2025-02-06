@@ -1,5 +1,5 @@
 {% set name = "graph-pes" %}
-{% set version = "0.0.21" %}
+{% set version = "0.0.22" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/graph_pes-{{ version }}.tar.gz
-  sha256: 0c6c90f5b867f75db46f23fc6266fcf12a4eef857c9e0b9d5842bcb70029ddc7
+  sha256: 5f11b033752e41c458986532e380dc4a892bd8f28b6cee1fbc3cf4e37a844a47
 
 build:
   entry_points:
@@ -27,7 +27,7 @@ requirements:
     - ase
     - dacite
     - data2objects >=0.1.0
-    - e3nn
+    - e3nn ==0.5.3
     - load-atoms >=0.3.9
     - locache >=4.0.2
     - numpy
