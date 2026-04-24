@@ -1,5 +1,5 @@
 {% set name = "graph-pes" %}
-{% set version = "0.0.23" %}
+{% set version = "0.0.25" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/graph_pes-{{ version }}.tar.gz
-  sha256: 9d45526b2ad074324ea34303318f19beb0d6c11853e72a7a7604662da32afda0
+  sha256: 2b05dc27c8335f1fa8e961a66ec5bc0138817a4d40ebc5da2452ff801248faae
 
 build:
   entry_points:
@@ -24,6 +24,8 @@ requirements:
     - wheel
     - pip
   run:
+    - pyright >=1.1.394
+    - vesin >=0.3.2
     - ase
     - dacite
     - data2objects >=0.1.0
